@@ -1,3 +1,4 @@
+# Read me from the code tab 
 
 Verity: 
 Explainable AI Loan Decision DashboardA professional, interactive web dashboard prototype built for an academic research project titled “Enhancing Customer Understanding of AI-Based Loan Approval Decisions.”
