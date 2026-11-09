@@ -12,6 +12,7 @@ Core Framework: React 18, TypeScriptBuild System: ViteStyling & Design System: C
 
 
    Repository Structure.
+   
 ├── .figma/                         
 ├── public/
 │   ├── favicon.svg                
