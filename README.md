@@ -3,12 +3,10 @@
 Verity: Explainable AI Loan Decision DashboardA professional, interactive web dashboard prototype built for an academic research project titled “Enhancing Customer Understanding of AI-Based Loan Approval Decisions.”
 
 1. Project Purpose
- The purpose of this dashboard is to demonstrate how plain-language explanations and visual factor cards help non-technical users understand AI-assisted loan approval decisions without relying on opaque "black-box" systems.This is an educational research prototype inspired by Explainable Artificial Intelligence (XAI). All applicant profiles, financial values, and outcomes are predefined illustrative scenarios (Scenarios A–E) and do not represent a live production banking system or external AI model predictions.
 
-4. System Architecture & Data Flow
-The application is implemented as a client-side web application designed to support research evaluation:Frontend Layer (src/App.tsx): Built with React, TypeScript, and Vite to deliver a responsive, multi-screen evaluation workflow (Welcome $\rightarrow$ Applicant Overview $\rightarrow$ Loan Decision $\rightarrow$ Explanation Breakdown $\rightarrow$ Educational Guide $\rightarrow$ Scenario Summary).Logic & Assessment Layer (src/financialAssessment.ts): Modular TypeScript functions that manage financial scenario attributes (Monthly Income, DTI Ratio, Credit Score) and bind them reliably across visual components.Data Layer (public/data/verity_cleaned_loan_dataset_1000.csv): Houses structured local datasets and scenario parameters to maintain deterministic, repeatable illustrative outcomes.
+The purpose of this dashboard is to demonstrate how plain-language explanations and visual factor cards help non-technical users understand AI-assisted loan approval decisions without relying on opaque "black-box" systems.This is an educational research prototype inspired by Explainable Artificial Intelligence (XAI). All applicant profiles, financial values, and outcomes are predefined illustrative scenarios (Scenarios A–E) and do not represent a live production banking system or external AI model predictions.
 
-5. Tech Stack & Tools
+2. Tech Stack & Tools
 Core Framework: React 18, TypeScriptBuild System: ViteStyling & Design System: Custom CSS / Tailwind CSS (Navy blue primary accent, neutral card structures, soft green/teal supportive indicators, warm amber/coral concern indicators)Testing Suite: Vitest / TypeScript assertion testing (src/financialAssessment.test.ts)Package Management: pnpm4.
 
 
@@ -31,20 +29,20 @@ Core Framework: React 18, TypeScriptBuild System: ViteStyling & Design System: C
 ├── tsconfig.json                 
 └── vite.config.ts                  
 
-6. System Architecture and Data Flow
+3. System Architecture and Data Flow
 Frontend (src/App.tsx): Built with React 18, TypeScript, and Vite. Renders the responsive 6-screen workflow including Welcome, Overview, Decision, Explanation, Factor Guide, and Summary.
 Logic Layer (src/financialAssessment.ts): Manages client-side state and binds applicant parameters including Income, DTI Ratio, and Credit Score to predefined outcomes and qualitative explanations.
 Data Layer (public/data/verity_cleaned_loan_dataset_1000.csv): Stores local synthetic scenario data for deterministic, repeatable evaluation without live ML server dependencies.
 Data Flow: Selecting an applicant scenario from A through E in App.tsx triggers financialAssessment.ts to retrieve the corresponding predefined parameters and render the plain-language factor cards and visual breakdown charts.
 
 
-7. Implementation Records & Technical Documentation
+4. Implementation Records & Technical Documentation
 Configuration Files: The project is set up with Vite (vite.config.ts) for fast bundling, strict TypeScript rules (tsconfig.json), and version control exclusions (.gitignore).
 Dependencies: Managed and locked using pnpm (package.json, pnpm-lock.yaml) with packages like React, Vite, and Tailwind CSS.
 Code Structure: The UI components live in src/App.tsx, the core financial logic resides in src/financialAssessment.ts, and unit tests are handled in src/financialAssessment.test.ts.
 
 
-8. How to Reproduce and Run the Artefact Locally
+5. How to Reproduce and Run the Artefact Locally
 Follow these steps to set up, run, and evaluate the artifact on your local machine.
 
 Prerequisites
