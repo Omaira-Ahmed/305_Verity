@@ -31,7 +31,21 @@ Core Framework: React 18, TypeScriptBuild System: ViteStyling & Design System: C
 ├── tsconfig.json                    # TypeScript compiler configuration
 └── vite.config.ts                   # Vite bundler configuration
 
-5. How to Reproduce and Run the Artefact Locally
+4. System Architecture and Data Flow
+
+Frontend (src/App.tsx): Built with React 18, TypeScript, and Vite. Renders the responsive 6-screen workflow including Welcome, Overview, Decision, Explanation, Factor Guide, and Summary.
+Logic Layer (src/financialAssessment.ts): Manages client-side state and binds applicant parameters including Income, DTI Ratio, and Credit Score to predefined outcomes and qualitative explanations.
+Data Layer (public/data/verity_cleaned_loan_dataset_1000.csv): Stores local synthetic scenario data for deterministic, repeatable evaluation without live ML server dependencies.
+Data Flow: Selecting an applicant scenario from A through E in App.tsx triggers financialAssessment.ts to retrieve the corresponding predefined parameters and render the plain-language factor cards and visual breakdown charts.
+
+
+5. Implementation Records & Technical Documentation
+Configuration Files: The project is set up with Vite (vite.config.ts) for fast bundling, strict TypeScript rules (tsconfig.json), and version control exclusions (.gitignore).
+Dependencies: Managed and locked using pnpm (package.json, pnpm-lock.yaml) with packages like React, Vite, and Tailwind CSS.
+Code Structure: The UI components live in src/App.tsx, the core financial logic resides in src/financialAssessment.ts, and unit tests are handled in src/financialAssessment.test.ts.
+
+
+6. How to Reproduce and Run the Artefact Locally
 Follow these steps to set up, run, and evaluate the artifact on your local machine.
 
 Prerequisites
