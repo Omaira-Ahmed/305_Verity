@@ -32,7 +32,7 @@ Core Framework: React 18, TypeScriptBuild System: ViteStyling & Design System: C
 ├── tsconfig.json                    # TypeScript compiler configuration
 └── vite.config.ts                   # Vite bundler configuration
 
-4. System Architecture and Data Flow
+5. System Architecture and Data Flow
 
 Frontend (src/App.tsx): Built with React 18, TypeScript, and Vite. Renders the responsive 6-screen workflow including Welcome, Overview, Decision, Explanation, Factor Guide, and Summary.
 Logic Layer (src/financialAssessment.ts): Manages client-side state and binds applicant parameters including Income, DTI Ratio, and Credit Score to predefined outcomes and qualitative explanations.
@@ -63,3 +63,4 @@ Step 3: Run Unit TestsTo execute automated verification of the underlying financ
 This runs the test suite (src/financialAssessment.test.ts) and outputs verification results directly to the console.
 
 6. Academic & Research DisclaimerThis artifact is developed strictly for university research and prototype evaluation. It does not run real-time machine learning inference engines, call external credit bureau APIs, or perform live SHAP/LIME calculations. All decision outputs and explanation cards are predefined illustrative examples.
+
