@@ -4,7 +4,6 @@ Verity: Explainable AI Loan Decision DashboardA professional, interactive web da
 
 1. Project Purpose
 
-
 The purpose of this dashboard is to demonstrate how plain-language explanations and visual factor cards help non-technical users understand AI-assisted loan approval decisions without relying on opaque "black-box" systems.This is an educational research prototype inspired by Explainable Artificial Intelligence (XAI). All applicant profiles, financial values, and outcomes are predefined illustrative scenarios (Scenarios A–E) and do not represent a live production banking system or external AI model predictions.
 
 4. System Architecture & Data Flow
