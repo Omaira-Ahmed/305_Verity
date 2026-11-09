@@ -14,23 +14,23 @@ Core Framework: React 18, TypeScriptBuild System: ViteStyling & Design System: C
 
 
    Repository Structure.
-├── .figma/                          # Figma interface design references & assets
+├── .figma/                         
 ├── public/
-│   ├── favicon.svg                  # Application favicon
+│   ├── favicon.svg                
 │   └── data/
-│       └── verity_cleaned_loan_dataset_1000.csv  # Pre-processed loan dataset
+│       └── verity_cleaned_loan_dataset_1000.csv  
 ├── src/
-│   ├── App.tsx                      # Primary dashboard UI & multi-screen flow
-│   ├── financialAssessment.ts       # Modular financial logic & data helpers
-│   ├── financialAssessment.test.ts  # Automated unit tests for data logic
-│   ├── index.css                    # Design system styles & layout resets
-│   ├── main.tsx                     # React application entry point
-│   └── vite-env.d.ts                # TypeScript environment declarations
-├── index.html                       # HTML base template
-├── package.json                     # Dependency list & script definitions
-├── pnpm-lock.yaml                   # Package lockfile
-├── tsconfig.json                    # TypeScript compiler configuration
-└── vite.config.ts                   # Vite bundler configuration
+│   ├── App.tsx                     
+│   ├── financialAssessment.ts       
+│   ├── financialAssessment.test.ts  
+│   ├── index.css                    
+│   ├── main.tsx                    
+│   └── vite-env.d.ts               
+├── index.html                    
+├── package.json                   
+├── pnpm-lock.yaml                 
+├── tsconfig.json                 
+└── vite.config.ts                  
 
 5. System Architecture and Data Flow
 
