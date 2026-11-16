@@ -3,7 +3,8 @@
 Verity: Explainable AI Loan Decision DashboardA professional, interactive web dashboard prototype built for an academic research project titled “Enhancing Customer Understanding of AI-Based Loan Approval Decisions.”
 
 1. Project Purpose
-The purpose of this dashboard is to demonstrate how plain-language explanations and visual factor cards help non-technical users understand AI-assisted loan approval decisions without relying on opaque "black-box" systems.This is an educational research prototype inspired by Explainable Artificial Intelligence (XAI). All applicant profiles, financial values, and outcomes are predefined illustrative scenarios (Scenarios A–E) and do not represent a live production banking system or external AI model predictions.
+The purpose of this dashboard is to demonstrate how plain-language explanations and visual factor cards help users understand loan assessment outcomes without relying on opaque "black-box" systems. 
+Verity uses applicant records from a Kaggle loan dataset and applies rule-based decision logic to determine assessment outcomes. It is an educational research prototype and does not represent a live banking system or a trained AI loan prediction model.
 
 2. Tech Stack & Tools
 Core Framework: React 18, TypeScriptBuild System: ViteStyling & Design System: Custom CSS / Tailwind CSS (Navy blue primary accent, neutral card structures, soft green/teal supportive indicators, warm amber/coral concern indicators)Testing Suite: Vitest / TypeScript assertion testing (src/financialAssessment.test.ts)Package Management: pnpm4.
@@ -29,10 +30,11 @@ Core Framework: React 18, TypeScriptBuild System: ViteStyling & Design System: C
 └── vite.config.ts                  
 
 4. System Architecture and Data Flow
-Frontend (src/App.tsx): Built with React 18, TypeScript, and Vite. Renders the responsive 6-screen workflow including Welcome, Overview, Decision, Explanation, Factor Guide, and Summary.
-Logic Layer (src/financialAssessment.ts): Manages client-side state and binds applicant parameters including Income, DTI Ratio, and Credit Score to predefined outcomes and qualitative explanations.
-Data Layer (public/data/verity_cleaned_loan_dataset_1000.csv): Stores local synthetic scenario data for deterministic, repeatable evaluation without live ML server dependencies.
-Data Flow: Selecting an applicant scenario from A through E in App.tsx triggers financialAssessment.ts to retrieve the corresponding predefined parameters and render the plain-language factor cards and visual breakdown charts.
+* **Frontend Layer (`src/App.tsx`):** Built with React 18, TypeScript, and Vite to deliver a responsive evaluation workflow.
+* **Logic Layer (`src/financialAssessment.ts`):** Manages client-side state and evaluates applicant financial information. Rule-based conditions determine the Accepted or Not Accepted outcome, and Debt-to-Income (DTI) is calculated using the applicant's existing monthly debt obligations and gross monthly income.
+* **Data Layer (`public/data/verity_cleaned_loan_dataset_1000.csv`):** Stores applicant records sampled from Kaggle. 
+  * *Data Source Attribution:* [Insert Kaggle Dataset Link / Source Reference Here]
+* **Data Flow:** The application loads applicant rows from the Kaggle dataset, processes them via rule-based logic in `financialAssessment.ts`, and renders the assessment outcome alongside plain-language explanations and visual factor breakdowns.
 
 
 6. Implementation Records & Technical Documentation
