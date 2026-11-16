@@ -44,6 +44,7 @@ Code Structure: The UI components live in src/App.tsx, the core financial logic 
 
 
 8. How to Reproduce and Run the Artefact Locally
+   
    Follow these steps to set up, run, and evaluate the artifact on your local machine.
 
 Prerequisites
