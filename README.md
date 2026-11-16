@@ -61,5 +61,6 @@ Code Structure: The UI components live in src/App.tsx, the core financial logic 
            This runs the test suite (src/financialAssessment.test.ts) and outputs verification results directly to the console.
 
 7. Academic & Research Disclaimer
+
 Verity is an academic research prototype designed to demonstrate how financial information and clear explanations can support users' understanding of loan assessment outcomes. It uses rule-based decision logic rather than a trained AI loan prediction model. It does not perform real-time machine learning inference, access external credit bureau APIs, or calculate actual SHAP/LIME explanations. Its assessment outcomes are based on the rules implemented within the prototype and should not be interpreted as actual bank lending decisions.
 
