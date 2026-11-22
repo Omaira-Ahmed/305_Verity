@@ -33,7 +33,7 @@ Verity uses applicant records from a Kaggle loan dataset and applies rule-based 
 * **Frontend Layer (`src/App.tsx`):** Built with React 18, TypeScript, and Vite to deliver a responsive evaluation workflow.
 * **Logic Layer (`src/financialAssessment.ts`):** Manages client-side state and evaluates applicant financial information. Rule-based conditions determine the Accepted or Not Accepted outcome, and Debt-to-Income (DTI) is calculated using the applicant's existing monthly debt obligations and gross monthly income.
 * **Data Layer (`public/data/verity_cleaned_loan_dataset_1000.csv`):** Stores applicant records sampled from Kaggle. 
-  * *Data Source Attribution:* [Insert Kaggle Dataset Link / Source Reference Here]
+  * *Data Source Attribution:* https://www.kaggle.com/datasets/miadul/personal-finance-ml-dataset?resource=download
 * **Data Flow:** The application loads applicant rows from the Kaggle dataset, processes them via rule-based logic in `financialAssessment.ts`, and renders the assessment outcome alongside plain-language explanations and visual factor breakdowns.
 
 
