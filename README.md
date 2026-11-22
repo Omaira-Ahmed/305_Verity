@@ -63,4 +63,5 @@ Code Structure: The UI components live in src/App.tsx, the core financial logic 
 7. Academic & Research Disclaimer
 
 Verity is an academic research prototype designed to demonstrate how financial information and clear explanations can support users' understanding of loan assessment outcomes. It uses rule-based decision logic rather than a trained AI loan prediction model. It does not perform real-time machine learning inference, access external credit bureau APIs, or calculate actual SHAP/LIME explanations. Its assessment outcomes are based on the rules implemented within the prototype and should not be interpreted as actual bank lending decisions.
+Verity Public URL: https://www.figma.com/make/KYT9oSUFQ8JDuUqOFZj4jD/Verity-Loan-Insights-Dashboard?fullscreen=1&t=ZYfVXIcc6c7Tw74n-1&code-node-id=0-6
 
